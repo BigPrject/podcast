@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side-by-Side Circular Audio Visualizations</title>
+    <!-- Link to the p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+    <!-- Link to the p5.sound library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/addons/p5.sound.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        #visualizations {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .visualization {
+            margin: 10px;
+        }
+        #playButton {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="playButton">Play All Audios</button>
+    <div id="visualizations">
+        <div id="visualization1" class="visualization"></div>
+        <div id="visualization2" class="visualization"></div>
+        <div id="visualization3" class="visualization"></div>
+    </div>
+    <script src="sketch1.js"></script>
+    <script src="sketch2.js"></script>
+    <script src="sketch3.js"></script>
+</body>
+</html>
